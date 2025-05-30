@@ -22,11 +22,11 @@ def download_file_from_google_drive(file_id, dest_path):
         print(f"📁 {dest_path} already exists.")
 
 # 🔹 Download otomatis model dan scaler
-download_file_from_google_drive("1ynM1X10ac-jvD16AHzdJE-nL5ASfxA60", "model_svm.pkl")
+download_file_from_google_drive("1ynM1X10ac-jvD16AHzdJE-nL5ASfxA60", "model_svm2.pkl")
 download_file_from_google_drive("1fG5PqD2vhHh41KeSS7uZqNSTvUFAqrON", "scaler.pkl")
 
 # 🔹 Load model dan scaler
-model = joblib.load('model_svm.pkl')
+model = joblib.load('model_svm2.pkl')
 scaler = joblib.load('scaler.pkl')
 
 @app.route('/')
